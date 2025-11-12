@@ -1,0 +1,41 @@
+export const snapshot = {};
+
+snapshot[`console logs: version update confirmation 1`] = `
+"Time to deploy npm package!
+
+Updating package.json version to 2.0.0...
+v2.0.0
+✓ Version updated in the package.json file successfully
+Checking if version 2.0.0 of test-package is already deployed...
+✓ Version 2.0.0 has not yet been deployed to npm. Proceeding to publish...
+Publishing to npm...
++ test-package@2.0.0
+✓ Successfully published test-package@2.0.0 to npm!
+"
+`;
+
+snapshot[`console logs: already deployed message 1`] = `
+"Time to deploy npm package!
+
+Updating package.json version to 1.5.0...
+v1.5.0
+✓ Version updated in the package.json file successfully
+Checking if version 1.5.0 of test-package is already deployed...
+✓ Version 1.5.0 of test-package is already deployed to npm
+Therefore, I'm going to skip publishing to npm right now. Deploying to npm complete!
+"
+`;
+
+snapshot[`console logs: test mode deployment with dry-run 1`] = `
+"Time to deploy npm package!
+
+Updating package.json version to 3.0.0...
+v3.0.0
+✓ Version updated in the package.json file successfully
+Checking if version 3.0.0 of test-package is already deployed...
+✓ Version 3.0.0 has not yet been deployed to npm. Proceeding to publish...
+Publishing to npm...
++ test-package@3.0.0
+✓ Successfully published test-package@3.0.0 to npm!
+"
+`;

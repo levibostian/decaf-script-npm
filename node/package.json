@@ -1,0 +1,22 @@
+{
+  "name": "@levibostian/decaf-script-npm",
+  "version": "0.0.0",
+  "description": "A lightweight NPM wrapper for decaf-script-npm binary",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/levibostian/decaf-script-npm.git"
+  },
+  "main": "script.js",
+  "bin": {
+    "decaf-script-npm": "./script.js"
+  },
+  "keywords": [
+    "decaf"
+  ],
+  "author": "Levi Bostian",
+  "license": "MIT"
+}
