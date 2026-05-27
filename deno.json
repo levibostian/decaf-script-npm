@@ -1,17 +1,9 @@
 {
-  "name": "@levibostian/decaf-script-npm",
-  "version": "0.1.0",
-  "exports": "./script.ts",
-  "publish": {
-    "include": [
-      "README.md",
-      "LICENSE",
-      "script.ts"
-    ]
-  },
   "tasks": {
     "test": "deno test --allow-all --junit-path reports/junit.xml --coverage=reports/coverage/",
-    "lint": "deno lint --fix"
+    "lint": "deno lint --fix",
+    "compile": "deno compile --output $OUTPUT_FILE_NAME --allow-env --allow-net --allow-run --allow-read --allow-write --target $DENO_TARGET script.ts",
+    "run": "deno run --allow-env --allow-net --allow-run --allow-read --allow-write script.ts"
   },
   "imports": {
     "@levibostian/decaf-sdk": "jsr:@levibostian/decaf-sdk@^0.2.1",
