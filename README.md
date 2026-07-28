@@ -22,7 +22,7 @@ Run using decaf's `shebang` command in your deployment workflow.
     deploy: |
       # your deployment scripts here...
       # at some point run the npm deploy script 
-      decaf shebang git@github.com:levibostian/decaf-script-npm.git/shebang.sh@<version-here>
+      decaf shebang https://github.com/levibostian/decaf-script-npm.git/shebang.sh@<version-here>
     # Other decaf arguments...
 ```
 
@@ -32,7 +32,7 @@ Replace `<version-here>` with a [release](https://github.com/levibostian/decaf-s
 
 ```bash
 decaf \
-  --deploy "decaf shebang git@github.com:levibostian/decaf-script-npm.git/shebang.sh@<version-here>"
+  --deploy "decaf shebang https://github.com/levibostian/decaf-script-npm.git/shebang.sh@<version-here>"
 ```
 
 # Configuration
@@ -46,7 +46,7 @@ This script requires minimal configuration and works automatically with decaf's 
 **Example:**
 
 ```bash
-decaf shebang git@github.com:levibostian/decaf-script-npm.git/shebang.sh@<version-here> --package-path ./packages/my-package
+decaf shebang https://github.com/levibostian/decaf-script-npm.git/shebang.sh@<version-here> --package-path ./packages/my-package
 ```
 
 ### NPM Authentication
