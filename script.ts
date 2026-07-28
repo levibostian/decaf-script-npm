@@ -4,6 +4,12 @@ import { getDeployStepInput } from "@levibostian/decaf-sdk";
 import $ from "@david/dax";
 import { parseArgs } from "@std/cli/parse-args";
 
+// Change to the working directory specified by the decaf environment
+const decafRootDir = Deno.env.get("DECAF_ROOT_WORKING_DIRECTORY");
+if (decafRootDir) {
+  Deno.chdir(decafRootDir);
+}
+
 // Parse the command line arguments to configure the script
 const args = parseArgs(Deno.args, {
   string: ["package-path"],
